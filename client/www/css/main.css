@@ -1,0 +1,687 @@
+html /deep/ [layout][horizontal], html /deep/ [layout][vertical] {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+html /deep/ [layout][horizontal][inline], html /deep/ [layout][vertical][inline] {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+html /deep/ [layout][horizontal] {
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+html /deep/ [layout][horizontal][reverse] {
+  -ms-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+html /deep/ [layout][vertical] {
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+html /deep/ [layout][vertical][reverse] {
+  -ms-flex-direction: column-reverse;
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+html /deep/ [layout][wrap] {
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+html /deep/ [layout][wrap-reverse] {
+  -ms-flex-wrap: wrap-reverse;
+  -webkit-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+html /deep/ [flex] {
+  -ms-flex: 1 1 0.000000001px;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-flex-basis: 0.000000001px;
+  flex-basis: 0.000000001px;
+}
+html /deep/ [vertical][layout] > [flex][auto-vertical],
+html /deep/ [vertical][layout]::shadow [flex][auto-vertical] {
+  -ms-flex: 1 1 auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+}
+html /deep/ [flex][auto] {
+  -ms-flex: 1 1 auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+}
+html /deep/ [flex][none] {
+  -ms-flex: none;
+  -webkit-flex: none;
+  flex: none;
+}
+html /deep/ [flex][one] {
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+html /deep/ [flex][two] {
+  -ms-flex: 2;
+  -webkit-flex: 2;
+  flex: 2;
+}
+html /deep/ [flex][three] {
+  -ms-flex: 3;
+  -webkit-flex: 3;
+  flex: 3;
+}
+html /deep/ [flex][four] {
+  -ms-flex: 4;
+  -webkit-flex: 4;
+  flex: 4;
+}
+html /deep/ [flex][five] {
+  -ms-flex: 5;
+  -webkit-flex: 5;
+  flex: 5;
+}
+html /deep/ [flex][six] {
+  -ms-flex: 6;
+  -webkit-flex: 6;
+  flex: 6;
+}
+html /deep/ [flex][seven] {
+  -ms-flex: 7;
+  -webkit-flex: 7;
+  flex: 7;
+}
+html /deep/ [flex][eight] {
+  -ms-flex: 8;
+  -webkit-flex: 8;
+  flex: 8;
+}
+html /deep/ [flex][nine] {
+  -ms-flex: 9;
+  -webkit-flex: 9;
+  flex: 9;
+}
+html /deep/ [flex][ten] {
+  -ms-flex: 10;
+  -webkit-flex: 10;
+  flex: 10;
+}
+html /deep/ [flex][eleven] {
+  -ms-flex: 11;
+  -webkit-flex: 11;
+  flex: 11;
+}
+html /deep/ [flex][twelve] {
+  -ms-flex: 12;
+  -webkit-flex: 12;
+  flex: 12;
+}
+html /deep/ [layout][start] {
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+html /deep/ [layout][center], html /deep/ [layout][center-center] {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+html /deep/ [layout][end] {
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+html /deep/ [layout][start-justified] {
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+html /deep/ [layout][center-justified], html /deep/ [layout][center-center] {
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+html /deep/ [layout][end-justified] {
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+html /deep/ [layout][around-justified] {
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+html /deep/ [layout][justified] {
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+html /deep/ [self-start] {
+  -ms-align-self: flex-start;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+}
+html /deep/ [self-center] {
+  -ms-align-self: center;
+  -webkit-align-self: center;
+  align-self: center;
+}
+html /deep/ [self-end] {
+  -ms-align-self: flex-end;
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+}
+html /deep/ [self-stretch] {
+  -ms-align-self: stretch;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+}
+html /deep/ [block] {
+  display: block;
+}
+html /deep/ [hidden] {
+  display: none !important;
+}
+html /deep/ [relative] {
+  position: relative;
+}
+html /deep/ [fit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+body[fullbleed] {
+  margin: 0;
+  height: 100vh;
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  height: 100%;
+}
+
+input {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  background-color: #253c5a;
+  color: #fff;
+}
+input,
+input:focus,
+input:hover,
+input:active {
+  border: 0;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background: #ff6161;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #ff6161;
+}
+
+.btn {
+  cursor: pointer;
+}
+.btn:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn.disabled {
+  opacity: 0.7;
+}
+.btn.btn-default {
+  background-color: #575757;
+}
+.btn.btn-default:hover {
+  background-color: #414141;
+}
+.btn.btn-success {
+  background-color: #ff6161;
+}
+.btn.btn-success:hover {
+  background-color: #ff4141;
+}
+.btn.btn-info {
+  background-color: #5bc0de;
+}
+.btn.btn-info:hover {
+  background-color: #31b0d5;
+}
+.btn.btn-warning {
+  background-color: #f0ad4e;
+}
+.btn.btn-warning:hover {
+  background-color: #ec971f;
+}
+.btn.btn-danger {
+  background-color: #d9534f;
+}
+.btn.btn-danger:hover {
+  background-color: #c9302c;
+}
+.btn.btn-action {
+  background-color: #5229b5;
+}
+.btn.btn-action:hover {
+  background-color: #3b1c84;
+}
+
+
+.app {
+  height: 100%;
+}
+.header {
+  -webkit-app-region: drag;
+  background-color: #fafafa;
+  height: 45px;
+}
+.header .btns {
+  margin: 14px 0 0 12px;
+}
+.header .btns .btn {
+  -webkit-app-region: no-drag;
+  display: inline-block;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 2px;
+}
+.header .version {
+  color: #969696;
+  margin: 15px 8px 0 0;
+  display: none;
+}
+.header .logo {
+  -webkit-app-region: no-drag;
+  color: #000;
+  font-family: font-family: 'BrandonText';
+  font-size: 24px;
+  cursor: pointer;
+  margin: 8px 14px 0 0;
+}
+
+
+.alerts div {
+  position: relative;
+  padding: 10px;
+  color: #fff4f4;
+  word-wrap: break-word;
+}
+.alerts .close {
+  position: absolute;
+  top: 6px;
+  right: 9px;
+  float: right;
+  cursor: pointer;
+}
+.alerts .close:hover {
+  opacity: 0.5;
+}
+.alerts .close:active {
+  opacity: 0.8;
+}
+.alerts div + div {
+  border-top: 1px solid rgba(0, 0, 0, .15);
+}
+.alerts .info {
+  background-color: #337ab7;
+}
+.alerts .warning {
+  background-color: #f0ad4e;
+}
+.alerts .error {
+  background-color: #830202;
+}
+
+
+.ubuntu {
+  display: none;
+  position: relative;
+}
+.ubuntu .box {
+  cursor: pointer;
+  padding: 15px;
+  background-color: #dd4814;
+  text-decoration: none;
+  display: none;
+  color: #fff;
+}
+.ubuntu img {
+  max-width: 100%;
+}
+.ubuntu .close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  opacity: 0.5;
+  color: #fff;
+  cursor: pointer;
+}
+.ubuntu .close:hover {
+  opacity: 1;
+}
+
+
+.profiles .list {
+  overflow-y: auto;
+}
+.system-logs .btn,
+.service-logs .btn,
+.profiles .btns .btn {
+  padding: 18px 0;
+  text-align: center;
+  font-size: 19px;
+  color: #fff;
+  position: relative;
+  width: 50%;
+}
+.profiles .btns .btn .profile-file {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.profiles .uri-input {
+  width: 100%;
+  padding: 12px 10px;
+  display: none;
+}
+.profiles .import-btns {
+  display: none;
+}
+
+
+.profile {
+  height: 207px;
+  color: #000;
+  transition: height 125ms linear;
+  overflow: hidden;
+  position: relative;
+}
+.profile.editing-logs,
+.profile.editing-config {
+  position: static;
+}
+.profile + .profile {
+  border-top: 1px solid #242a30;
+}
+.profile .logo {
+  color: #ffffff;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+.profile .info {
+  margin: 14px 0 14px 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.profile .info .label {
+  margin-top: 15px;
+  margin-bottom: 1px;
+  font-size: 13px;
+  color: #515356;
+  text-transform: uppercase;
+}
+.editor,
+.alerts div {
+  -webkit-touch-callout: default;
+  -webkit-user-select: text;
+  user-select: text;
+}
+.profile .logo,
+.profile .info {
+  cursor: default;
+  transition: -webkit-filter 125ms linear, filter 125ms linear;
+}
+.profile.menu-open .logo,
+.profile.menu-open .info {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+.profile .info .label:first-child {
+  margin-top: 0;
+}
+.profile .open-menu {
+  padding: 7px 13px 0 13px;
+  font-size: 24px;
+}
+.profile .open-menu i {
+  cursor: pointer;
+}
+.profile .menu {
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  width: 0;
+  visibility: hidden;
+  transition: width 125ms linear;
+}
+.profile .menu.show {
+  width: 126px;
+  visibility: visible;
+}
+.profile .menu-backdrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+.profile.menu-open .menu-backdrop {
+  display: block;
+}
+.profile .menu .item {
+  color: #fff;
+  width: 126px;
+  height: 34px;
+  justify-content: center;
+}
+.profile .menu .item.connect,
+.profile .menu .item.disconnect {
+  height: 37px;
+}
+.profile .menu .item.disconnect {
+  display: none;
+}
+
+.profile .menu .connect-user-input,
+.profile .menu .connect-pass-input,
+.profile .menu .connect-pin-input,
+.profile .menu .connect-otp-input,
+.profile .menu .connect-yubikey-input,
+.profile .menu .connect-confirm,
+.profile .menu .connect-cancel {
+  position: absolute;
+  top: 0;
+  left: 126px;
+  width: 63px;
+  height: 37px;
+  padding: 0 6px;
+  transition: left 125ms linear;
+}
+.profile .menu .connect-user-input,
+.profile .menu .connect-pass-input,
+.profile .menu .connect-pin-input,
+.profile .menu .connect-otp-input,
+.profile .menu .connect-yubikey-input {
+  font-size: 16px;
+  width: 190px;
+}
+.profile .menu.authenticating-user .connect-user-input,
+.profile .menu.authenticating-pass .connect-pass-input,
+.profile .menu.authenticating-pin .connect-pin-input,
+.profile .menu.authenticating-otp .connect-otp-input,
+.profile .menu.authenticating-yubikey .connect-yubikey-input {
+  left: -190px;
+}
+.profile .menu.authenticating-user .connect-confirm,
+.profile .menu.authenticating-pass .connect-confirm,
+.profile .menu.authenticating-pin .connect-confirm,
+.profile .menu.authenticating-otp .connect-confirm,
+.profile .menu.authenticating-yubikey .connect-confirm {
+  left: 0;
+}
+.profile .menu.authenticating-user .connect-cancel,
+.profile .menu.authenticating-pass .connect-cancel,
+.profile .menu.authenticating-pin .connect-cancel,
+.profile .menu.authenticating-otp .connect-cancel,
+.profile .menu.authenticating-yubikey .connect-cancel {
+  left: 63px;
+}
+
+.profile .menu .rename-input,
+.profile .menu .rename-confirm,
+.profile .menu .rename-cancel {
+  position: absolute;
+  top: 37px;
+  left: 126px;
+  width: 63px;
+  height: 34px;
+  padding: 0 6px;
+  transition: left 125ms linear;
+}
+.profile .menu .rename-input {
+  font-size: 16px;
+  width: 190px;
+}
+.profile .menu.renaming .rename-input {
+  left: -190px;
+}
+.profile .menu.renaming .rename-confirm {
+  left: -126px;
+}
+.profile .menu.renaming .rename-confirm {
+  left: 0;
+}
+.profile .menu.renaming .rename-cancel {
+  left: 63px;
+}
+
+.profile .menu .delete-ask,
+.profile .menu .delete-yes,
+.profile .menu .delete-no {
+  position: absolute;
+  top: 71px;
+  left: 126px;
+  width: 63px;
+  transition: left 125ms linear;
+}
+.profile .menu .delete-ask {
+  background-color: #575757;
+  width: 126px;
+}
+.profile .menu.deleting .delete-ask {
+  left: -126px;
+}
+.profile .menu.deleting .delete-yes {
+  left: 0;
+}
+.profile .menu.deleting .delete-no {
+  left: 63px;
+}
+
+.profile .menu .autostart-on,
+.profile .menu .autostart-off {
+  position: absolute;
+  top: 105px;
+  left: 126px;
+  width: 63px;
+  transition: left 125ms linear;
+}
+.profile .menu.autostarting .autostart-on {
+  left: 0;
+}
+.profile .menu.autostarting .autostart-off {
+  left: 63px;
+}
+
+.system-logs,
+.service-logs,
+.profile .logs,
+.profile .config {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms linear;
+}
+.system-logs.open,
+.service-logs.open,
+.profile.editing-logs .logs,
+.profile.editing-config .config {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
+  top: 45px;
+}
+.system-logs .editor,
+.service-logs .editor,
+.profile .logs .editor,
+.profile .config .editor {
+  width: 100%;
+  height: calc(100% - 52px);
+  margin: 0;
+}
+.system-logs .btn,
+.service-logs .btn,
+.profile .logs .btn,
+.profile .config .btn {
+  width: 50%;
+  height: 52px;
+  display: inline-block;
+  font-size: 19px;
+  padding: 14px 0;
+}
+.service-logs .btn {
+  width: 100%;
+}
+.system-logs ::-webkit-scrollbar,
+.service-logs ::-webkit-scrollbar,
+.profile .logs ::-webkit-scrollbar,
+.profile .config ::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+  background: #042b4d;
+}
+.system-logs ::-webkit-scrollbar-thumb,
+.service-logs ::-webkit-scrollbar-thumb,
+.profile .logs ::-webkit-scrollbar-thumb,
+.profile .config ::-webkit-scrollbar-thumb {
+  background: #1b6bb0;
+}
