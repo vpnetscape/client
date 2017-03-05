@@ -1,0 +1,26 @@
+{
+  "name": "vpnetscape",
+  "version": "1.0.1",
+  "main": "www/main.js",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "mustache": "^2.3.0",
+    "request": "^2.79.0",
+    "tar": "^2.2.1",
+    "ws": "^2.1.0"
+  },
+  
+  "author": "Alembikov <dev.andreev@mail.ru>",
+ "scripts" : {
+    "start": "electron-packager ."
+    
+  },
+
+  "devDependencies": {
+    "electron-rebuild": "^1.5.7",
+    "electron-packager": "^8.5.2",
+    "electron": "^1.4.15",
+    "rimraf": "^2.6.0",
+    "rcedit": "^0.7.0"
+  }
+}
