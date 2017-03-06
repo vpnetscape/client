@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-gui-script minSpecVersion="1">
+    <title>VPNetscape</title>
+    <organization>com.vpnetscape</organization>
+    <domains enable_localSystem="true"/>
+    <options customize="never" require-scripts="true" rootVolumeOnly="true"/>
+    <background file="diagram.tiff" alignment="bottomleft" scaling="none"/>
+    <welcome file="welcome.html" mime-type="text/html"/>
+    <license file="license.txt"/>
+    <pkg-ref id="com.vpnetscape.pkg.vpnetscape" version="0.1.0"
+        auth="root">Build.pkg</pkg-ref>
+    <choices-outline>
+        <line choice="com.vpnetscape.pkg.vpnetscape"/>
+    </choices-outline>
+    <choice
+        id="com.vpnetscape.pkg.vpnetscape"
+        visible="true"
+        title="VPNetscape Client"
+        description="VPNetscapepnetscape oVPN Client"
+        start_selected="true">
+      <pkg-ref id="com.vpnetscape.pkg.vpnetscape"/>
+    </choice>
+</installer-gui-script>
