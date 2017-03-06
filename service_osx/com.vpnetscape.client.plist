@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.vpnetscape.client</string>
+	<key>Program</key>
+	<string>/Applications/vpnetscape.app/Contents/MacOS/VPNetscape</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/vpnetscape.app/Contents/MacOS/VPNetscape</string>
+		<string>--no-main</string>
+	</array>
+  <key>RunAtLoad</key>
+	<true/>
+</dict>
+</plist>
